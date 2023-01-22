@@ -14,23 +14,39 @@ let Top = 0;
 btnLeft.addEventListener("click", () => {
   console.log("left");
 
-  square.style.setProperty("left", `${(left -= 10)}px`);
+  if (left <= 0) {
+    return;
+  }
+
+  square.style.setProperty("left", `${(left -= 20)}px`);
 });
 
 btnRight.addEventListener("click", () => {
   console.log("right");
 
-  square.style.setProperty("left", `${(left += 10)}px`);
+  if (left >= 850) {
+    return;
+  }
+
+  square.style.setProperty("left", `${(left += 20)}px`);
 });
 
 btnUp.addEventListener("click", () => {
   console.log("up");
 
-  square.style.setProperty("top", `${(Top -= 10)}px`);
+  if (Top <= 0) {
+    return;
+  }
+
+  square.style.setProperty("top", `${(Top -= 20)}px`);
 });
 
 btnDown.addEventListener("click", () => {
   console.log("down");
-  
-  square.style.setProperty("top", `${(Top += 10)}px`);
+
+  if (Top >= 350) {
+    return;
+  }
+
+  square.style.setProperty("top", `${(Top += 20)}px`);
 });
