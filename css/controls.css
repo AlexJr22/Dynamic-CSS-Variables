@@ -36,3 +36,32 @@ nav {
 #controls1 button:active {
   background-color: #ffffff80;
 }
+
+/* controls2 */
+
+#controls2 {
+  width: 50%;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#bordeRadius {
+  width: 70%;
+}
+
+#colorBox {
+  background-color: #666680;
+  height: 40px;
+  width: 70%;
+}
+
+.inputs {
+  color: aliceblue;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
