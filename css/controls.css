@@ -1,0 +1,38 @@
+nav {
+  background-color: #666680;
+  display: flex;
+
+  height: 120px;
+  width: min(100vw, 760px);
+
+  border-radius: 0.5rem;
+}
+
+/* controls1 */
+
+#controls1 {
+  width: 50%;
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#controls1 button {
+  background-color: rgba(255, 255, 255, 0);
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  box-shadow: 0 0 15px #00000090;
+}
+
+#controls1 button:active {
+  background-color: #ffffff80;
+}

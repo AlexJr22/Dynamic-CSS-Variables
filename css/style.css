@@ -1,4 +1,5 @@
 @import url(./container.css);
+@import url(./controls.css);
 
 * {
   margin: 0;
