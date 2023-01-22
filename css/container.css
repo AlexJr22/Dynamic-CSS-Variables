@@ -1,8 +1,6 @@
 :root {
-  --top: 0;
-  --bottom: 0;
-  --left: 0;
-  --right: 0;
+  --top: 0px;
+  --left: 0px;
 }
 
 #container {
@@ -31,6 +29,4 @@
   box-shadow: 0 0 20px rgb(255, 255, 255, .7); 
   top: var(--top);
   left: var(--left);
-  bottom: var(--bottom);
-  right: var(--right);
 }
