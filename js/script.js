@@ -1,14 +1,3 @@
-// selecionar os quadrados
-const elements = document.querySelectorAll(".element");
-
-const selectSquare = (index) => {
-  elements.forEach((element) => {
-    element.classList.remove("active");
-  });
-
-  elements[index].classList.add("active");
-};
-
 // controles de movimento
 const btnLeft = document.getElementById("btnLeft");
 const btnRight = document.getElementById("btnRight");
@@ -18,6 +7,7 @@ const btnDown = document.getElementById("btnDown");
 // escutar os controles
 btnLeft.addEventListener("click", () => {
   console.log("esqueda");
+  
 });
 
 btnRight.addEventListener("click", () => {

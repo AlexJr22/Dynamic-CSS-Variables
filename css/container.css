@@ -1,3 +1,10 @@
+:root {
+  --top: 0;
+  --bottom: 0;
+  --left: 0;
+  --right: 0;
+}
+
 #container {
   position: relative;
   background-color: #30374a;
@@ -14,31 +21,16 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, .8);
 }
 
-.element {
-  width: 150px;
-  height: 150px;
-}
-
-/* squares */
-
-.square1 {
+.square {
   background-color: red;
   position: absolute;
-  bottom: 0;
-}
 
-.square2 {
-  background-color: green;
-  position: absolute;
-  top: 0;
-}
+  width: 150px;
+  height: 150px;
 
-.square3 {
-  background-color: blue;
-  position: absolute;
-  right: 0;
-}
-
-.active {
   box-shadow: 0 0 20px rgb(255, 255, 255, .7); 
+  top: var(--top);
+  left: var(--left);
+  bottom: var(--bottom);
+  right: var(--right);
 }
