@@ -1,0 +1,15 @@
+#container {
+  background-color: #30374a;
+  display: flex;
+
+  width: min(100vw, 1000px);
+  height: 500px;
+
+  margin: 15px;
+}
+
+.elemt {
+  border: solid 1px black;
+  width: 150px;
+  height: 150px;
+}
