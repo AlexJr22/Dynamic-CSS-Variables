@@ -1,5 +1,18 @@
-.elemt {
-  border: solid 1px black;
-  width: 150px;
-  height: 150px;
+@import url(./container.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #232332;
+  display: flex;
+  
+  height: 100vh;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
