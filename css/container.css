@@ -1,4 +1,5 @@
 #container {
+  position: relative;
   background-color: #30374a;
   display: flex;
 
@@ -22,14 +23,20 @@
 
 .square1 {
   background-color: red;
+  position: absolute;
+  bottom: 0;
 }
 
 .square2 {
   background-color: green;
+  position: absolute;
+  top: 0;
 }
 
 .square3 {
   background-color: blue;
+  position: absolute;
+  right: 0;
 }
 
 .active {
