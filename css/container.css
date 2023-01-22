@@ -6,10 +6,12 @@
   height: 500px;
 
   margin: 15px;
+  border-radius: .5rem;
+
+  overflow: hidden;
 }
 
 .elemt {
-  border: solid 1px black;
   width: 150px;
   height: 150px;
 }
