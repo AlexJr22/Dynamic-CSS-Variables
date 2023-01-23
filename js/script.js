@@ -51,10 +51,18 @@ btnDown.addEventListener("click", () => {
   square.style.setProperty("top", `${(Top += 20)}px`);
 });
 
-// alterar o border radius e o color do quadrado
+// alterar o border radius
 
 const bordeRadius = document.getElementById("bordeRadius");
 
 bordeRadius.addEventListener("input", () => {
-  square.style.setProperty('border-radius', `${bordeRadius.value}%`);
+  square.style.setProperty("border-radius", `${bordeRadius.value}%`);
+});
+
+// alterar o background-color
+
+const colorBox = document.getElementById("colorBox");
+
+colorBox.addEventListener("input", () => {
+  square.style.setProperty("background-color", `${colorBox.value}`);
 });
