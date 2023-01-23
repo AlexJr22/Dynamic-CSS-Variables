@@ -50,3 +50,11 @@ btnDown.addEventListener("click", () => {
 
   square.style.setProperty("top", `${(Top += 20)}px`);
 });
+
+// alterar o border radius e o color do quadrado
+
+const bordeRadius = document.getElementById("bordeRadius");
+
+bordeRadius.addEventListener("input", () => {
+  square.style.setProperty('border-radius', `${bordeRadius.value}%`);
+});
