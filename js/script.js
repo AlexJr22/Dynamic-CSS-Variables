@@ -1,16 +1,17 @@
+const square = document.getElementById("square"); // quadrado que terá suas propriedades css alteradas
+
 // controles de movimento
 const btnLeft = document.getElementById("btnLeft");
 const btnRight = document.getElementById("btnRight");
 const btnUp = document.getElementById("btnUp");
 const btnDown = document.getElementById("btnDown");
 
-const square = document.getElementById("square");
-
-// escutar os controles
+// escutando os controles
 
 let left = 0;
 let Top = 0;
 
+// mover para esquerda
 btnLeft.addEventListener("click", () => {
   console.log("left");
 
@@ -21,6 +22,7 @@ btnLeft.addEventListener("click", () => {
   square.style.setProperty("left", `${(left -= 20)}px`);
 });
 
+// mover para direita
 btnRight.addEventListener("click", () => {
   console.log("right");
 
@@ -31,6 +33,7 @@ btnRight.addEventListener("click", () => {
   square.style.setProperty("left", `${(left += 20)}px`);
 });
 
+// mover para cima
 btnUp.addEventListener("click", () => {
   console.log("up");
 
@@ -41,6 +44,7 @@ btnUp.addEventListener("click", () => {
   square.style.setProperty("top", `${(Top -= 20)}px`);
 });
 
+// mover para baixo
 btnDown.addEventListener("click", () => {
   console.log("down");
 
@@ -53,7 +57,7 @@ btnDown.addEventListener("click", () => {
 
 // alterar o border radius
 
-const bordeRadius = document.getElementById("bordeRadius");
+const bordeRadius = document.getElementById("bordeRadius"); // input=range
 
 bordeRadius.addEventListener("input", () => {
   square.style.setProperty("border-radius", `${bordeRadius.value}%`);
@@ -61,7 +65,7 @@ bordeRadius.addEventListener("input", () => {
 
 // alterar o background-color
 
-const colorBox = document.getElementById("colorBox");
+const colorBox = document.getElementById("colorBox"); // input=color
 
 colorBox.addEventListener("input", () => {
   square.style.setProperty("background-color", `${colorBox.value}`);
